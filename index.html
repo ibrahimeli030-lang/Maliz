@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="searchrow">
+        <input
+          id="cityInput"
+          type="text"
+          placeholder="Enter a city.."
+          autocomplete="off"
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div class="statusline" id="statusline"></div>
+
+      <hr class="div" />
+
+      <div class="empty" id="emptyState">Search a city to see the weather</div>
+
+      <div class="main" id="main">
+        <div class="toprow">
+          <div>
+            <h1 class="city" id="cityName">—</h1>
+            <p class="subline" id="subline1">—</p>
+            <p class="subline" id="subline2">—</p>
+          </div>
+          <div class="tempbox">
+            <div class="icon" id="mainIcon"></div>
+            <div class="tempnum" id="tempNum">—<sup>°C</sup></div>
+          </div>
+        </div>
+
+        <hr class="div" />
+
+        <div class="forecast" id="forecastStrip"></div>
+      </div>
+
+      <hr class="div" />
+
+      <div class="foot">
+        This project was coded by
+        <a href="#" target="_blank" rel="noopener">Matt Delac</a>, is
+        <a
+          href="https://github.com/ibrahimeli030-lang/Maliz"
+          target="_blank"
+          rel="noopener"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/projects/harmonious-crepe-73420f/deploys/"
+          target="_blank"
+          rel="noopener"
+          >hosted on Netlify</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
